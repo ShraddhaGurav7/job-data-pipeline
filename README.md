@@ -1,7 +1,5 @@
 # 🚀 Job Market Data Pipeline
-
-> End-to-end Data Engineering pipeline to extract, transform, and analyze job market data.
-
+Built an ETL pipeline using API data ingestion and SQL to analyze job market trends
 ---
 
 ## 📌 Overview
