@@ -2,8 +2,8 @@ import requests
 import pandas as pd
 
 # 🔑 API Credentials
-APP_ID = "a2a8cfcd"
-APP_KEY = "f7250bbbff52e91d4563cf645c4f59e4"
+APP_ID = "your_app_id"
+APP_KEY = "your_app_key"
 
 
 # =========================
@@ -25,13 +25,13 @@ def extract_data():
         response = requests.get(url, params=params)
 
         if response.status_code != 200:
-            print(f"❌ Error on page {page}: {response.status_code}")
+            print(f" Error on page {page}: {response.status_code}")
             continue
 
         data = response.json()
         all_jobs.extend(data.get('results', []))
 
-    print(f"✅ Total jobs fetched: {len(all_jobs)}")
+    print(f" Total jobs fetched: {len(all_jobs)}")
 
     return all_jobs
 
@@ -54,7 +54,7 @@ def transform_data(raw_jobs):
     df = pd.DataFrame(jobs)
 
     if df.empty:
-        print("⚠️ No data to process")
+        print(" No data to process")
         return df
 
     # =========================
@@ -73,6 +73,6 @@ def transform_data(raw_jobs):
     for skill in skills:
         df[skill] = df['description'].str.contains(skill, na=False)
 
-    print("✅ Data transformed successfully")
+    print(" Data transformed successfully")
 
     return df
