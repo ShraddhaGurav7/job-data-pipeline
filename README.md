@@ -1,6 +1,6 @@
 # 🚀 Job Market Data Pipeline
---
-🚀 Built a modular ETL pipeline using API ingestion, data transformation, and MySQL to analyze real-world job market trends.
+---
+Built a modular ETL pipeline using API ingestion, data transformation, and MySQL to analyze real-world job market trends.
 ---
 
 ## 📌 Overview
