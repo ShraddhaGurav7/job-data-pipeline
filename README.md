@@ -1,11 +1,19 @@
 # 🚀 Job Market Data Pipeline
-Built an ETL pipeline using API data ingestion and SQL to analyze job market trends
+--
+🚀 Built a modular ETL pipeline using API ingestion, data transformation, and MySQL to analyze real-world job market trends.
 ---
 
 ## 📌 Overview
 This project builds a modular ETL pipeline that ingests job postings from an API, processes unstructured data, and stores it in a structured format for analysis.
 
 ---
+
+## 🔥 Key Highlights
+
+- Built modular ETL pipeline (extract, transform, load)
+- Processed unstructured job descriptions into structured features
+- Implemented batch data ingestion using API pagination
+- Stored processed data in MySQL for querying and analysis
 
 ## 🎯 Problem Statement
 Job seekers often lack visibility into:
@@ -19,7 +27,7 @@ This project converts raw job postings into structured insights.
 
 ## 🧱 Architecture
 
-Adzuna API → ETL (Python) → MySQL → CSV → Analysis
+API → ETL Pipeline (Python) → MySQL → CSV → Insights
 
 ---
 
